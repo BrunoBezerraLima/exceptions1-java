@@ -32,11 +32,11 @@ public class Reservation {
 		this.roomNumber = roomNumber;
 	}
 
-	public Date getCheckin() {
+	public Date getCheckIn() {
 		return checkIn;
 	}
 
-	public Date getCheckout() {
+	public Date getCheckOut() {
 		return checkOut;
 	}
 

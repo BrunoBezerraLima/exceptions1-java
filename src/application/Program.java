@@ -18,9 +18,9 @@ public class Program {
 		try {
 			System.out.print("Room number: ");
 			int number = sc.nextInt();
-			System.out.print("Chec-in data (DD/MM/YYYY): ");
+			System.out.print("Check-in data (DD/MM/YYYY): ");
 			Date checkIn = sdf.parse(sc.next());
-			System.out.print("Chec-out data (DD/MM/YYYY): ");
+			System.out.print("Check-out data (DD/MM/YYYY): ");
 			Date checkOut = sdf.parse(sc.next());
 			
 			Reservation reservation = new Reservation(number, checkIn, checkOut);
@@ -28,9 +28,9 @@ public class Program {
 			
 			System.out.println();
 			System.out.println("Enter data to update the reservation: ");
-			System.out.print("Chec-in data (DD/MM/YYYY): ");
+			System.out.print("Check-in data (DD/MM/YYYY): ");
 			checkIn = sdf.parse(sc.next());
-			System.out.print("Chec-out data (DD/MM/YYYY): ");
+			System.out.print("Check-out data (DD/MM/YYYY): ");
 			checkOut = sdf.parse(sc.next());
 			
 			reservation.updateDates(checkIn, checkOut);
